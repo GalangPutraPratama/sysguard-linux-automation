@@ -1,1 +1,3 @@
-Data simulasi untuk backup test
+SysGuard sample service data
+Created for backup and restore testing
+Version: 1.0
