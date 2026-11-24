@@ -1,0 +1,15 @@
+========================================
+  SysGuard — Backup Module
+========================================
+
+[2026-11-24 21:55:59] [INFO] === Memulai proses backup ===
+[2026-11-24 21:55:59] [INFO] Ditemukan 5 file di /home/violin/sysguard-linux-automation/data/source
+[1/3] Mengecek status container 'sysguard-nginx'...
+[2026-11-24 21:55:59] [ERROR] Container 'sysguard-nginx' tidak aktif
+
+========================================
+  [BACKUP DITOLAK]
+  Container 'sysguard-nginx' tidak aktif.
+  Jalankan container terlebih dahulu.
+========================================
+[2026-11-24 21:55:59] [ERROR] Backup DITOLAK — container tidak aktif
