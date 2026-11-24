@@ -1,0 +1,6 @@
+{
+  "service": "nginx",
+  "port": 80,
+  "workers": 2,
+  "log_level": "info"
+}
