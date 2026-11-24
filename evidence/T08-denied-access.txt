@@ -1,0 +1,7 @@
+=== T08: Unauthorized Access Rejected ===
+
+--- SSH Login with denied user ---
+$ sshpass -p 'wrongpass' ssh -o StrictHostKeyChecking=no -p 2222 denied_user@localhost whoami
+Permission denied, please try again.
+
+=== RESULT: Denied user cannot access the server ===

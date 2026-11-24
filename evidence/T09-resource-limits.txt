@@ -1,0 +1,12 @@
+=== T09: CPU and Memory Limits ===
+
+--- Docker Stats ---
+$ docker stats sysguard-nginx --no-stream
+CONTAINER ID   NAME             CPU %   MEM USAGE / LIMIT   MEM %    PIDS
+beb2be1707f5   sysguard-nginx   0.00%   14.52MiB / 128MiB   11.35%   17
+
+--- Docker Inspect ---
+$ docker inspect sysguard-nginx --format='CPU Limit: {{.HostConfig.NanoCpus}} | Memory Limit: {{.HostConfig.Memory}}'
+CPU Limit: 500000000 | Memory Limit: 134217728
+
+=== RESULT: CPU limited to 0.5 cores, Memory limited to 128MB ===
