@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: sysguard-nginx
     ports:
-      - "8080:80"
+      - "8085:80"
     volumes:
       - ../data/source:/usr/share/nginx/html:ro
     networks:
