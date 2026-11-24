@@ -1,0 +1,19 @@
+[2026-11-24 21:45:00] [INFO] ==============================
+[2026-11-24 21:45:00] [INFO]   SysGuard Monitoring Report  
+[2026-11-24 21:45:00] [INFO] ==============================
+
+[2026-11-24 21:45:00] [INFO] === Container Status Check ===
+[2026-11-24 21:45:00] [WARN] Container 'sysguard-nginx' EXISTS but is STOPPED
+NAMES            STATUS
+sysguard-nginx   Exited (0) 20 seconds ago
+
+[2026-11-24 21:45:00] [INFO] === Disk Capacity Check ===
+Filesystem      Size  Used Avail Use% Mounted on
+C:\             475G  155G  321G  33% /mnt/c
+[2026-11-24 21:45:00] [INFO] Disk usage 33% < threshold 80% — OK
+
+[2026-11-24 21:45:00] [WARN] Skipping resource & log checks (container not running)
+
+[2026-11-24 21:45:00] [INFO] ==============================
+[2026-11-24 21:45:00] [INFO]   Monitoring report complete  
+[2026-11-24 21:45:00] [INFO] ==============================
