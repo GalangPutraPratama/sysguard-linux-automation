@@ -1,0 +1,2 @@
+[2026-11-24 21:45:12] [INFO] === Container Resource Limits ===
+[2026-11-24 21:45:12] [ERROR] Container 'sysguard-nginx' is not running. Cannot check resources.
