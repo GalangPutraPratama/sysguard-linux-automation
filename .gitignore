@@ -1,1 +1,32 @@
+# Backup archives
+backups/*.tar.gz
 
+# Runtime logs
+logs/*.log
+
+# Restored data
+data/restored/*
+!data/restored/.gitkeep
+
+# Keep directory structure
+!backups/.gitkeep
+!logs/.gitkeep
+
+# Config with secrets
+config/config.conf
+.env
+
+# Credentials
+*.key
+*.pem
+id_rsa
+id_rsa.pub
+credentials*
+password*
+
+# Temporary
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
