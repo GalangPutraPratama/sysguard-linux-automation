@@ -1,0 +1,23 @@
+========================================
+  SysGuard — Backup Module
+========================================
+
+[2026-11-24 21:55:58] [INFO] === Memulai proses backup ===
+[2026-11-24 21:55:58] [INFO] Ditemukan 5 file di /home/violin/sysguard-linux-automation/data/source
+[1/3] Mengecek status container 'sysguard-nginx'...
+[2026-11-24 21:55:59] [INFO] Container 'sysguard-nginx' sedang berjalan
+
+[2/3] Mengecek ruang disk (minimum: 100MB)...
+[2026-11-24 21:55:59] [INFO] Disk space OK: 976664MB free (minimum 100MB)
+
+[3/3] Membuat archive backup...
+[2026-11-24 21:55:59] [INFO] Backup berhasil: sysguard-backup_20261124_215559.tar.gz (4.0K)
+
+========================================
+  [BACKUP BERHASIL]
+  File   : sysguard-backup_20261124_215559.tar.gz
+  Ukuran : 4.0K
+  Lokasi : /home/violin/sysguard-linux-automation/backups/sysguard-backup_20261124_215559.tar.gz
+  Waktu  : 2026-11-24 21:55:59
+========================================
+[2026-11-24 21:55:59] [INFO] === Proses backup selesai ===

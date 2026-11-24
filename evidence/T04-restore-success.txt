@@ -1,0 +1,35 @@
+========================================
+  SysGuard — Restore Module
+========================================
+
+[2026-11-24 21:56:00] [INFO] === Memulai proses restore ===
+Daftar backup yang tersedia:
+----------------------------------------
+  [1] sysguard-backup_20261124_215559.tar.gz (4.0K, 2026-11-24 21:55:59)
+----------------------------------------
+
+[2026-11-24 21:56:00] [INFO] User memilih backup: sysguard-backup_20261124_215559.tar.gz
+
+Meng-extract 'sysguard-backup_20261124_215559.tar.gz' ke '/home/violin/sysguard-linux-automation/data/restored'...
+[2026-11-24 21:56:01] [INFO] Direktori restore dibersihkan: /home/violin/sysguard-linux-automation/data/restored
+[2026-11-24 21:56:01] [INFO] Extract berhasil: 6 file dari sysguard-backup_20261124_215559.tar.gz
+[OK] Berhasil extract 6 file.
+
+Memverifikasi file hasil restore terhadap source...
+----------------------------------------
+[2026-11-24 21:56:01] [INFO] Verifikasi BERHASIL — 5 file cocok dengan source
+
+========================================
+  [VERIFIKASI BERHASIL]
+  Semua 5 file cocok dengan source.
+  Checksum MD5 identik.
+========================================
+
+========================================
+  [RESTORE BERHASIL]
+  Archive  : sysguard-backup_20261124_215559.tar.gz
+  Lokasi   : /home/violin/sysguard-linux-automation/data/restored
+  Waktu    : 2026-11-24 21:56:01
+  Status   : Data terverifikasi ✓
+========================================
+[2026-11-24 21:56:01] [INFO] === Proses restore selesai — BERHASIL ===
