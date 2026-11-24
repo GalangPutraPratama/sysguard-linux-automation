@@ -1,0 +1,16 @@
+FROM alpine:3.18
+
+RUN apk add --no-cache openssh-server openssh-client && \
+    ssh-keygen -A && \
+    adduser -D -s /bin/sh sysguard && \
+    echo "sysguard:project123" | chpasswd && \
+    adduser -D -s /bin/sh denied_user && \
+    passwd -l denied_user || true && \
+    mkdir -p /home/sysguard/.ssh && \
+    chown sysguard:sysguard /home/sysguard/.ssh && \
+    sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config && \
+    echo "DenyUsers denied_user" >> /etc/ssh/sshd_config
+
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd", "-D", "-e"]

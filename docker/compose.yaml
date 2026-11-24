@@ -1,1 +1,33 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sysguard-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ../data/source:/usr/share/nginx/html:ro
+    networks:
+      - sysguard-net
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 128M
+    restart: unless-stopped
 
+  ssh-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.ssh
+    container_name: sysguard-ssh
+    ports:
+      - "2222:22"
+    networks:
+      - sysguard-net
+    restart: unless-stopped
+
+networks:
+  sysguard-net:
+    driver: bridge
